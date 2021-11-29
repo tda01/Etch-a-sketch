@@ -14,9 +14,6 @@ body {
     box-shadow: 2px 4px 9px 1px rgba(0,0,0,0.67)
 
 }
-.hidden {
-    visibility: hidden;
-}
 
 .cell {
 
@@ -66,9 +63,5 @@ h1 {
     position: relative;
     left: 25rem;
     top: -25rem;
-}
-
-.active {
-    background-color: red;
 }
 
