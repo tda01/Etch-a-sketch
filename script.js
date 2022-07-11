@@ -18,6 +18,7 @@ function reset() {
 let label = document.querySelector("input[name=size]").labels[0];
 let color = document.getElementById("colorpicker");
 let size = document.getElementById("size");
+let clear = document.getElementById("clear");
 
 const buttons = document.querySelectorAll("input[name=mode]");
 
@@ -25,10 +26,10 @@ let mode;
 
 for (let i = 0; i < 3; i++) {
     buttons[i].addEventListener("click", function() {
-       if (buttons[i].value == "colormode") {
+       if (buttons[i].value === "colormode") {
            mode = "color";
        }
-       else if (buttons[i].value == "eraser") {
+       else if (buttons[i].value === "eraser") {
            mode = "eraser";
        }
        else {
@@ -72,8 +73,6 @@ celule.forEach(celula => celula.addEventListener("mouseover", function() {
 
     }
 }));
-
-
 
 size.addEventListener("change", function() {
     label.innerText = `${size.value} x ${size.value}`;
